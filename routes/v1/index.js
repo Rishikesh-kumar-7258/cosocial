@@ -3,7 +3,7 @@ const express = require("express");
 const {
   UserController,
   PaymentController,
-  CreditController,
+  // CreditController,
   ContentController,
 } = require("../../controllers/index");
 
@@ -23,9 +23,9 @@ router.post("/verification", PaymentController.paymentVerification);
 
 /*  ----------- Credit Routes ------------- */
 
-router.post("/credit-balance", CreditController.creditBalance);
-router.post("/buy-credits", CreditController.purchaseCredits);
-router.post("/update-credits", CreditController.reduceCredits);
+// router.post("/credit-balance", CreditController.creditBalance);
+// router.post("/buy-credits", CreditController.purchaseCredits);
+// router.post("/update-credits", CreditController.reduceCredits);
 /*  ----------- Playground Routes ------------- */
 
 router.get("/all-content", ContentController.getAllContent);
